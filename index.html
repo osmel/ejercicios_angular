@@ -1,0 +1,44 @@
+<!-- index.html -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN 
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+      -->
+
+      <!-- SPELLS -->
+      <!-- load angular and angular route via CDN 
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      -->
+      <meta charset="utf-8">
+      <title>Introducción</title>
+    </head>
+
+    <body>
+
+      <!-- <script src="script.js"></script> -->
+
+      <script src="script.js"></script> 
+      <script src="node_modules/systemjs/dist/system.js"></script>
+
+      
+
+      <script>
+       //establecer nuestro path de referencia de baseUrl
+        SystemJS.config({
+            baseUrl: '/',
+            defaultJSExtensions:true
+        });
+
+        //Cargar /js/main.js
+        SystemJS.import('app.js');
+
+        
+      </script> 
+
+
+    </body>
+    </html>
