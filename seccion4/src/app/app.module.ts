@@ -32,7 +32,7 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     HttpModule,
     APP_ROUTING
   ],
-  providers: [ //providers=services
+  providers: [ //providers=services=servicios
     HeroesService
   ],
   bootstrap: [AppComponent]

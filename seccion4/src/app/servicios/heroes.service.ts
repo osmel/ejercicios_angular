@@ -70,6 +70,18 @@ export class HeroesService {
   getheroe(i:string){ //aqui incluso fuimos más especifico y dijimos q la funcion regresa un arreglo de heroe
      return this.heroes[i];
   }
+  buscandoHeroe(valor:string){ //aqui incluso fuimos más especifico y dijimos q la funcion regresa un arreglo de heroe
+    let arreglo:InterfazHeroe[] = [];
+    valor= valor.toLowerCase(); // convertirla a Minuscula
+    for (let iheroe of this.heroes ) {
+      let nombre=iheroe.nombre.toLowerCase();
+      if (nombre.indexOf(valor)>=0 ){ //si encuentra uno pues entonces es mayor q 0
+        arreglo.push(iheroe); //agrego el heroe encontrado
+      }
+    }
+    return arreglo;
+
+  }
 
 }
 

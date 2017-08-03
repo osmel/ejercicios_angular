@@ -9,10 +9,11 @@ import { HeroeComponent } from './components/heroe/heroe.component';
 
 
 const APP_ROUTES: Routes = [
+  { path: '', component: HomeComponent }, //default
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'heroes', component: HeroesComponent },
-  {path:'heroe/:id',component:HeroeComponent },
+  {path:'heroe/:id',component:HeroeComponent, data:{nombre:'osmel'} },
 
   //esta es la ruta por defecto, que tomara sino coincide ninguna
   { path: '**', pathMatch: 'full', redirectTo: 'Home' }
